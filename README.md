@@ -1,7 +1,8 @@
 # QuorumFix
 brute forces the Proxmox quorum for HA-clusters comprised of even numbered nodes (**Use at your own risk**)
 
-### Installation
+## Installation
+### This assumes that your cluster is working already and is healthy
 log in as root user
 
 download QuorumFix.sh and place it in /root/ or any other accessible directory by a privileged user
@@ -10,6 +11,7 @@ create a new cron job with ```crontab -e```
 
 add ```*/1 * * * * /bin/bash -c "/root/QuorumFix.sh"```
 
+repeat these steps on each node!
 ---
  
 
